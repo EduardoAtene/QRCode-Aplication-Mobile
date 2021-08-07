@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela_incial_background"
+    android:orientation="vertical"
+    tools:context=".ui.activity.TelaInicialAcitivity">
+
+
+    <TextView
+        android:id="@+id/text_view_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:text="@string/eduardo_atene_silva"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/button_scan_qrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+
+        android:focusable="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+
+        android:text="Scannear QRCODE"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp" />
+</RelativeLayout>

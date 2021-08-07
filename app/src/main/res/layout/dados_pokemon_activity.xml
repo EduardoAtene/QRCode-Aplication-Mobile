@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tela_dados_pokemon_background"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".ui.activity.DadosPokemonActivity"
+    tools:visibility="visible">
+
+
+    <ImageButton
+        android:id="@+id/button_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:backgroundTint="#00FFFFFF"
+        android:soundEffectsEnabled="false"
+        android:src="@drawable/seta_voltar"
+
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/dados_pokemon_activity_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="ID: ?????"
+
+            android:textColor="@color/amarelo"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        tools:src="@drawable/pokemon_not_found" />
+
+    <TextView
+        android:id="@+id/dados_pokemon_activity_name"
+        android:layout_width="391dp"
+        android:layout_height="61dp"
+
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:layout_marginBottom="156dp"
+        android:text="Nome: "
+        android:textColor="@color/amarelo"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/dados_pokemon_activity_type"
+        android:layout_width="391dp"
+        android:layout_height="80dp"
+
+
+        android:text="Type: "
+        android:textColor="@color/amarelo"
+        android:textSize="23sp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+</RelativeLayout>
