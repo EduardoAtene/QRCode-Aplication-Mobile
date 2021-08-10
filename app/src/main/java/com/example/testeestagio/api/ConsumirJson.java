@@ -27,12 +27,11 @@ import org.json.JSONObject;
             }
 
             dadosPokemon.setFront_default_img(jsonObject.getJSONObject("sprites").getString("front_default"));
-            Log.e("Teste",dadosPokemon.getFront_default_img());
+
 
             return dadosPokemon;
 
         }catch (Exception e){
-            // JSONException
             e.printStackTrace();
             return null;
         }
