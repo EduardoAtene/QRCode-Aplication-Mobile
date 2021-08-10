@@ -1,9 +1,13 @@
 package com.example.testeestagio.model;
 
+import android.util.Log;
+
+import java.util.ArrayList;
+
 public class PokemonDados {
     private String id;
     private String name;
-    private String tipo;
+    private ArrayList<String> type = new ArrayList<>();
     private String front_default_img;
 
 
@@ -16,19 +20,30 @@ public class PokemonDados {
     }
 
     public String getName() {
-        return name;
+        return name.toUpperCase();
     }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getTipo() {
-        return tipo;
+    public ArrayList<String> getTypes(){
+        return this.type;
+    }
+
+    public String getType(int index){
+        try{
+            return type.get(index);
+        }catch(Exception e){
+            e.printStackTrace();
+            return null;
+        }
     }
 
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        tipo = tipo.toLowerCase();
+        tipo = tipo.substring(0,1).toUpperCase() + tipo.substring(1).toLowerCase();
+        this.type.add(tipo);
     }
 
     public String getFront_default_img() {

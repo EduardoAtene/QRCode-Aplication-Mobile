@@ -11,6 +11,13 @@
     tools:visibility="visible">
 
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
+        tools:src="@drawable/pokemon_not_found" />
+
     <ImageButton
         android:id="@+id/button_voltar"
         android:layout_width="wrap_content"
@@ -42,13 +49,6 @@
             android:textSize="25sp" />
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
-        android:layout_centerInParent="true"
-        tools:src="@drawable/pokemon_not_found" />
 
     <TextView
         android:id="@+id/dados_pokemon_activity_name"

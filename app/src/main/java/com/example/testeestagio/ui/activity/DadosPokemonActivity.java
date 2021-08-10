@@ -4,6 +4,7 @@ package com.example.testeestagio.ui.activity;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -71,11 +72,14 @@ public class DadosPokemonActivity extends Activity {
         private void exibirDadosPokemon() {
             if (pokemonDados != null) {
                     // BUG JSONException -> incrementar valores
-                    id_pokemon.setText("ID " );
-                    nome_pokemon.setText("Nome:");
+                    id_pokemon.setText("ID : " + pokemonDados.getId() );
+                    nome_pokemon.setText("Nome: " + pokemonDados.getName() );
 
-                    //Lista
-                    type_pokemon.setText("Nome:");
+                    for(int x=0; x<pokemonDados.getTypes().size();x++){
+                        if(x==0){type_pokemon.append(pokemonDados.getType(x));}
+                        else{type_pokemon.append(", "+ pokemonDados.getType(x));}
+
+                    }
             }else{
                 Toast.makeText(DadosPokemonActivity.this, "Pokemon não encontrado", Toast.LENGTH_SHORT).show();
             }
